@@ -37,26 +37,6 @@ export default {
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
         title: '南京汤山一号温泉',
         desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 4,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 5,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 6,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 7,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
       }]
     }
   }
