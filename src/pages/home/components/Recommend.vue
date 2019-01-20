@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl"/>
@@ -20,25 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: 1,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 2,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }, {
-        id: 3,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/b3/1415e635014967c75a3d955ae256a628.water.jpg_200x200_54ee590f.jpg',
-        title: '南京汤山一号温泉',
-        desc: '生态旅游，温泉度假，收获健康好心情'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

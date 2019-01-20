@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of weekendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -21,25 +21,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      weekendList: [{
-        id: 1,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/ed/bf2bc72af591d5.jpg_r_640x214_f9f1bfcc.jpg',
-        title: '温泉必游',
-        desc: '为你量身打造绿色健康生活方式，远离都市的喧嚣，工作的烦恼，还你一个悠闲静雅之旅'
-      }, {
-        id: 2,
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/f1/ae9d4299b8aaea.jpg_r_640x214_0c555905.jpg',
-        title: '南京必打卡',
-        desc: '看尽王侯将相荣辱成败，六朝金粉潮起潮落'
-      }, {
-        id: 3,
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/f4/f455d92ba582f608.water.jpg_640x276_d1694c3b.jpg',
-        title: '南京汤山颐尚温泉',
-        desc: '温泉疗养、度假休闲的好去处'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
