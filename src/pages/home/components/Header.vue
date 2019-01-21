@@ -9,7 +9,9 @@
     </div>
     <div class="header-right">
       {{this.city}}
-      <span class="iconfont arrow-icon">&#xe64a;</span>
+      <router-link to="/city">
+         <span class="iconfont arrow-icon">&#xe64a;</span>
+      </router-link>
     </div>
   </div>
 </template>
@@ -25,7 +27,7 @@ export default {
   @import '~styles/varibles.styl'
   .header
     display: flex
-    line-height: .86rem
+    line-height: $headerHeight
     background: $bgColor
     color: #fff
     .header-left
@@ -47,6 +49,7 @@ export default {
       width: 1.24rem
       float: right
       text-align: center
+      color: #fff
       .arrow-icon
         margin-left: -.04rem
         font-size: .24rem
