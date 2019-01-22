@@ -1,36 +1,46 @@
 <template>
   <div>
   <div class="banner" @click="handleImgClick">
-    <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1411/13/0cd5a9a57ae0d1b9b935ec604ce0f9bf.water.jpg_600x330_d6101489.jpg"/>
+    <img class="banner-img" :src="bannerImg"/>
     <div class="banner-info">
       <div class="banner-title">
-        南京海底世界
+        {{this.sightName}}
       </div>
       <div class="banner-number">
         <span class="iconfont banner-icon">&#xe692;</span>
+        {{this.bannerImgs.length}}
       </div>
     </div>
   </div>
+  <fade>
   <common-gallary
     v-show="showMultiImg"
     @close="handleMultiClose"
-    :list="imgList"
+    :list="bannerImgs"
   >
   </common-gallary>
+  </fade>
   </div>
 </template>
 <script>
 import CommonGallary from '@/common/gallary/Gallary.vue'
+import Fade from '@/common/fade/Fade.vue'
+
 export default {
   name: 'DetailBanner',
-  components: {
-    CommonGallary
+  props: {
+    sightName: String,
+    bannerImg: String,
+    bannerImgs: Array
   },
   data () {
     return {
-      showMultiImg: false,
-      imgList: ['http://img1.qunarzz.com/sight/p0/1411/13/0cd5a9a57ae0d1b9b935ec604ce0f9bf.water.jpg_r_800x800_9773cfee.jpg', 'http://img1.qunarzz.com/sight/p0/1706/9b/9b6ce141d1a23b30a3.img.jpg_r_800x800_24dbd8cb.jpg']
+      showMultiImg: false
     }
+  },
+  components: {
+    CommonGallary,
+    Fade
   },
   methods: {
     handleImgClick () {
